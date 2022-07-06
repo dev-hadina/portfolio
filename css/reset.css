@@ -1,77 +1,35 @@
-@charset "utf-8";
+@charset "utf-8"; 
+@import url(http://ts.daumcdn.net/custom/blog/0/606/skin/images/nanumgothic.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* http://blog.naver.com/mvcweb */
+/* CSS RESET */
+html,body{width:100%; height:100%}
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,em,img,
+ins,q,strong,sub,sup,b,i,dl,dt,dd,ol,ul,li,a,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,
+menu,nav,section,summary,time,mark,audio,video{margin:0; padding:0;border:0;vertical-align:baseline;-webkit-text-size-adjust:none;/*세로모드에서 가로모드로 전환할때 텍스트가 약간 커지는 현상 방지*/}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block}
+ul,ol,li,dl{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+a,a:link,a:hover,a:active {text-decoration:none}
+em,i,address{font-style:normal;font-weight:normal}
+table{border-collapse:collapse; border-spacing:0}
+img,fieldset{border:0}
+hr,legend,caption{display:none}
+textarea{resize:none}
+textarea,input{-webkit-border-radius:1px;-webkit-appearance:none /*form요소의 기본 스타일을 없앰*/ }
+label,button,input[type="submit"],input[type="reset"]{cursor:pointer}
 
-html,
-body {
-	width: 100%;
-	height: 100%;
-}
+a:link    {color:#696f74; text-decoration:none}
+a:visited {color:#696f74; text-decoration:none}
+a:hover   {color:#486d9b; text-decoration:none}
+a:active  {color:#486d9b; text-decoration:none}
 
-/* 약식초기화 */
-html,body,div,span,h1,h2,h3,h4,h5,h6,
-p,blockquote,q,address,strong,em,img,
-ul,ol,li,dl,dt,dd,a,figure, figcaption, mark, i, b,
-table, caption, tbody, tfoot, thead, tr, th, td,
-header,section,article,footer,nav,aside{
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+body {overflow-y:scroll;color:#696f74;font-size:0.8em;font-family:'Nanum Gothic',돋움,dotum,굴림,gulim,sans-serif,Helvetica,AppleGothic;line-height:1.25em}
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-	color: #222;
-	text-decoration: none;
-}
-
-ul,
-ol,
-li {
-	list-style: none;
-}
-
-address,
-em,
-i {
-	font-style: normal;
-}
-
-hr,
-caption,
-legend {
-	display: none;
-}
-
-fieldset,
-img {
-	border: none;
-}
-
-textarea {
-	resize: none;
-}
-
-.text-center {
-	height: 100px;
-	line-height: 100px;
-	text-align: center;
-}
-
-/* "screen reader만 읽게 하겠다"라는 의미의 클래스명 sr-only */
-/* 향후 포지션 학습 시간에 자세히 다룰 예정 */
 .sr-only {
-	position: absolute;
-	left: -9999px;
-}
-
-body {
-	/* 페이지에서 세로 스크롤바가 나타났을 때 가로로 컨텐츠가 흔들리는 현상을 방지 */
-	overflow-y: scroll;
-	color: #222;
-	font-size: 0.8em;
-	line-height: 1.4;
-	font-family: 'Noto Sans KR';
+  text-indent: -9999px;
 }
