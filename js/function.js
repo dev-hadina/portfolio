@@ -7,12 +7,16 @@ $(function(){
 		evt.preventDefault();
 		
 		if($(window).width()>640){
-			$('.bg-ani').css({'animation': 'none'}).delay(0).animate({left:'100%'},2100);
-			$('html, body').delay(2100).animate({scrollTop:800});
+
+			$('.bg-ani').css({'animation': 'none'}).delay(0).animate({left:'100%'},1500);
+			$('html, body').delay(1500).animate({scrollTop:800});
+
 		} else {
+
 			$('html, body').delay(0).animate({scrollTop:800});
+
 		}
-	})
+	});
 	
 	
 	//모바일 nav 
@@ -22,7 +26,7 @@ $(function(){
 		
 		let scrollTop = $(this).scrollTop();
 
-		if(scrollTop > $(this).height()){
+		if(scrollTop > $('#main').height()) {
 			$('header').addClass('fixed');
 			$('.intro').css({
 				marginTop: $('header').height()
@@ -34,6 +38,15 @@ $(function(){
 			});
 		}
 	});
+
+
+	//압축메뉴 버튼
+	const $btngnb = $('header > .btn-gnb');
+
+	$btngnb.on('click', function(){
+		
+		$('nav').slideToggle(150);
+	})
 
 
 	//포트폴리오 fade 효과
@@ -59,6 +72,7 @@ $(function(){
 		fadeFn();
 	});
 
+
 	//작업과정 노출
 	const $prss = $('#hand .btn > .prss');
 	const $bkscreen = $('#hand .bkscreen');
@@ -77,12 +91,61 @@ $(function(){
 	});
 
 
+//QnA 버튼
+	const $answer = $('#foot dl> dt> a');
+	
+	$answer.on('click', function(evt){
+		evt.preventDefault();
 
+		const asIdx = $answer.index(this);
 
+		$answer.eq(asIdx).find('.arrow').toggleClass('on');
+		$('#foot dl> dd').eq(asIdx).slideToggle(200).css({ backgroundColor : '#eee' });
 
+	});
 
 	
-	
+	//원페이지- nav 클릭으로 section 이동
+	const $nav = $('header > nav > .gnb > li > a');
+	const arrTop = [];
+
+	let gnbIdx = null;
+
+	for(let i=0; i<$nav.length; i++){
+		arrTop[i] = $('section').eq(i).offset().top;
+	}
+
+	// console.log('arrTop = ', arrTop);
+
+	$nav.on('click', function(evt){
+		evt.preventDefault();
+
+		gnbIdx = $nav.index(this);
+
+		$('html, body').stop().animate({
+			scrollTop : arrTop[gnbIdx]-70
+		},300)
+	});
+
+	//scroll 이동에 따라 nav 활성화
+	$(window).on('scroll', function(){
+		const scrollTop = $(this).scrollTop();
+
+		console.log('scrollTop =',scrollTop);
+
+		for(let i=0; i<arrTop.length; i++){
+
+			if(scrollTop >= arrTop[i]-150){
+				$nav.eq(i).parent().addClass('on').siblings().removeClass('on');
+
+			} else if (scrollTop < arrTop[1]-150){
+				
+				$nav.parent().removeClass('on');
+			}
+		}
+	});
+
+
   //aside 버튼
 	const $aside = $('aside');
 
@@ -127,6 +190,7 @@ $(function(){
 			})
 		});
 	
+
 		// //처음 접속시 load 이벤트 구문
 		// $(window).on('load', function(){
 		// 	$('html,body').stop().animate({
