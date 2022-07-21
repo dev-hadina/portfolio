@@ -46,7 +46,7 @@ $(function(){
 	$btngnb.on('click', function(){
 		
 		$('nav').slideToggle(150);
-	})
+	});
 
 
 	//포트폴리오 fade 효과
@@ -76,8 +76,6 @@ $(function(){
 	//작업과정 노출
 	const $prss = $('#hand .btn > .prss');
 	const $bkscreen = $('#hand .bkscreen');
-	const $box = $bkscreen.children('imgbox');
-	const $btnclse = $bkscreen.find('.clse');
 
 	$prss.on('click', function(evt){
 		evt.preventDefault();
@@ -85,7 +83,7 @@ $(function(){
 		$bkscreen.show();
 	});
 
-	$btnclse.on('click', function(){
+	$bkscreen.on('click', function(){
 
 		$bkscreen.hide();
 	});
@@ -115,8 +113,6 @@ $(function(){
 		arrTop[i] = $('section').eq(i).offset().top;
 	}
 
-	// console.log('arrTop = ', arrTop);
-
 	$nav.on('click', function(evt){
 		evt.preventDefault();
 
@@ -130,8 +126,6 @@ $(function(){
 	//scroll 이동에 따라 nav 활성화
 	$(window).on('scroll', function(){
 		const scrollTop = $(this).scrollTop();
-
-		console.log('scrollTop =',scrollTop);
 
 		for(let i=0; i<arrTop.length; i++){
 
@@ -191,10 +185,10 @@ $(function(){
 		});
 	
 
-		// //처음 접속시 load 이벤트 구문
-		// $(window).on('load', function(){
-		// 	$('html,body').stop().animate({
-		// 		scrollTop:0
-		// 	});
-		// });
+		//처음 접속시 load 이벤트 구문
+		$(window).on('load', function(){
+			$('html,body').stop().animate({
+				scrollTop:0
+			});
+		});
 	});

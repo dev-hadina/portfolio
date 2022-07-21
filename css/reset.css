@@ -31,5 +31,10 @@ a:active  {color:#486d9b; text-decoration:none}
 body {overflow-y:scroll;color:#696f74;font-size:0.8em;font-family:'Nanum Gothic',돋움,dotum,굴림,gulim,sans-serif,Helvetica,AppleGothic;line-height:1.25em}
 
 .sr-only {
-  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  clip: rect(1px 1px 1px 1px);
 }
