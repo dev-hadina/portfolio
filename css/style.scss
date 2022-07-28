@@ -228,26 +228,22 @@ $mobile : "screen and (max-width:640px)";
       }
 
       >nav {
-        // position: absolute;
-        // left: 50%;
-        // top: -5px;
+        position: absolute;
+        left: 50%;
+        top: -10px;
         height: 67px;
-        // border: 1px solid #000;
-        // margin-left: -100px;
+        margin-left: -250px;
 
         @media #{$mobile}{
           display: none;
           width: 100%;
           margin-top: 70px;
           z-index: 100;
-          border: 1px solid #000;
         }
         
         >.gnb {
           display: flex;
           flex-flow: row nowrap;
-          
-          // justify-content: space-between;
 
           @media #{$mobile}{
             display: initial;
