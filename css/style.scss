@@ -49,7 +49,7 @@ $mobile : "screen and (max-width:480px)";
           font-size: 30px;
         }
 
-        @media screen and (min-width:320px){
+        @media screen and (min-width:320px) and (max-width: 470px){
           font-size: 28px;
         }
       }
@@ -361,7 +361,7 @@ $mobile : "screen and (max-width:480px)";
             text-align: justify;
           }
 
-          @media screen and (min-width:320px){
+          @media screen and (min-width:320px) and (max-width: 470px){
             width: 280px;
             padding: 20px;
           }
@@ -374,7 +374,7 @@ $mobile : "screen and (max-width:480px)";
               font-size: 13px;
             }
 
-            @media screen and (min-width:320px){
+            @media screen and (min-width:320px) and (max-width: 470px){
               font-size: 11px;
             }
 
@@ -386,7 +386,7 @@ $mobile : "screen and (max-width:480px)";
                 font-size: 17px;
               }
 
-              @media screen and (min-width:320px){
+              @media screen and (min-width:320px) and (max-width: 470px){
                 font-size: 15px;
               }
             }
@@ -565,7 +565,7 @@ $mobile : "screen and (max-width:480px)";
           margin-bottom: 5px;
         }
 
-        @media screen and (min-width:320px){
+        @media screen and (min-width:320px) and (max-width: 470px){
           font-size: 30px;
         }
       } //h3
@@ -578,7 +578,7 @@ $mobile : "screen and (max-width:480px)";
           margin: 30px 50px 0;
         }
 
-        @media screen and (min-width:320px){
+        @media screen and (min-width:320px) and (max-width: 470px){
           margin: 0 auto;
         }
         
@@ -655,7 +655,7 @@ $mobile : "screen and (max-width:480px)";
         margin-bottom: 100px;
       }
 
-      @media screen and (min-width:320px){
+      @media screen and (min-width:320px) and (max-width: 470px){
         height: 800px;
       }
 
@@ -692,7 +692,7 @@ $mobile : "screen and (max-width:480px)";
           text-indent: 60px;
         }
 
-        @media screen and (min-width:320px){
+        @media screen and (min-width:320px) and (max-width: 470px){
           font-size: 22px;
         }
       } //h3
@@ -704,7 +704,7 @@ $mobile : "screen and (max-width:480px)";
           height: 820px;
         }
 
-        @media screen and (min-width:320px){
+        @media screen and (min-width:320px) and (max-width: 470px){
           height: 700px;
         }
 
@@ -714,7 +714,7 @@ $mobile : "screen and (max-width:480px)";
           gap: 100px;
           margin-top: 50px;
 
-          @media screen and (min-width:320px){
+          @media screen and (min-width:320px) and (max-width: 470px){
             gap: 30px;
           }
 
@@ -745,7 +745,7 @@ $mobile : "screen and (max-width:480px)";
             margin: 70px 35px 0;
           }
 
-          @media screen and (min-width:320px){
+          @media screen and (min-width:320px) and (max-width: 470px){
             margin: 0 auto;
           }
 
@@ -762,7 +762,7 @@ $mobile : "screen and (max-width:480px)";
               padding-left: 0px;
             }
 
-            @media screen and (min-width:320px){
+            @media screen and (min-width:320px) and (max-width: 470px){
               margin: 0 17px;
             }
 
@@ -774,7 +774,7 @@ $mobile : "screen and (max-width:480px)";
                 max-width: 400px;
               }
 
-              @media screen and (min-width:320px){
+              @media screen and (min-width:320px) and (max-width: 470px){
                 margin-top: 50px;
                 width: 280px;
               }
@@ -793,7 +793,7 @@ $mobile : "screen and (max-width:480px)";
                 font-size: 14px;
                 line-height: 2;
 
-                @media screen and (min-width:320px){
+                @media screen and (min-width:320px) and (max-width: 470px){
                   font-size: 11px;
                 }
               }//expln
@@ -873,7 +873,7 @@ $mobile : "screen and (max-width:480px)";
                 margin: 0 auto;
               }
 
-              @media screen and (min-width:320px){
+              @media screen and (min-width:320px) and (max-width: 470px){
                 margin-top: 50px;
                 width: 280px;
                 height: 220px;
@@ -893,7 +893,7 @@ $mobile : "screen and (max-width:480px)";
                   height: 208px;
                 }
 
-                @media screen and (min-width:320px){
+                @media screen and (min-width:320px) and (max-width: 470px){
                   left: 11px;
                   top: 25px;
                   width: 255px;
@@ -947,7 +947,7 @@ $mobile : "screen and (max-width:480px)";
           text-indent: 60px;
         }
         
-        @media screen and (min-width:320px){
+        @media screen and (min-width:320px) and (max-width: 470px){
           font-size: 20px;
         }
       } //h3
@@ -971,7 +971,7 @@ $mobile : "screen and (max-width:480px)";
         >dl {
           margin-top: 50px;
 
-          @media screen and (min-width:320px){
+          @media screen and (min-width:320px) and (max-width: 470px){
             max-width: 300px;
           }
           
@@ -989,7 +989,7 @@ $mobile : "screen and (max-width:480px)";
               color: #000;
               font-size: 15px;
 
-              @media screen and (min-width:320px){
+              @media screen and (min-width:320px) and (max-width: 470px){
                 font-size: 11px;
               }
               
@@ -1026,7 +1026,7 @@ $mobile : "screen and (max-width:480px)";
               font-size: 13px;
             }
 
-            @media screen and (min-width:320px){
+            @media screen and (min-width:320px) and (max-width: 470px){
               font-size: 11px;
             }
           }//dd-답변
