@@ -1,19 +1,19 @@
 $(function(){
 	
 	//메인 비행기 
-	const $airplane = $('.bg-ani').children('a');
+	const $airplane = $('.bg-ani');
 	
 	$airplane.on('click', function(evt){
 		evt.preventDefault();
 		
-		if($(window).width()>640){
+		if($(window).width()>480){
 
 			$('.bg-ani').css({'animation': 'none'}).delay(0).animate({left:'100%'},1500);
 			$('html, body').delay(1500).animate({scrollTop:800});
 
 		} else {
 
-			$('html, body').delay(0).animate({scrollTop:800});
+			$('html, body').delay(0).animate({scrollTop: 650});
 
 		}
 	});
@@ -26,7 +26,7 @@ $(function(){
 		
 		let scrollTop = $(this).scrollTop();
 
-		if(scrollTop > $('#main').height()) {
+		if(scrollTop > $('#main').height() +100) {
 			$('header').addClass('fixed');
 			$('.intro').css({
 				marginTop: $('header').height()
@@ -41,10 +41,9 @@ $(function(){
 
 
 	//압축메뉴 버튼
-	const $btngnb = $('header > .btn-gnb');
+	const $btngnb = $('header .btn-gnb');
 
 	$btngnb.on('click', function(){
-		
 		$('nav').slideToggle(150);
 	});
 
@@ -104,7 +103,7 @@ $(function(){
 
 	
 	//원페이지- nav 클릭으로 section 이동
-	const $nav = $('header > nav > .gnb > li > a');
+	const $nav = $('header nav > .gnb > li > a');
 	const arrTop = [];
 
 	let gnbIdx = null;
@@ -119,7 +118,7 @@ $(function(){
 		gnbIdx = $nav.index(this);
 
 		$('html, body').stop().animate({
-			scrollTop : arrTop[gnbIdx]-70
+			scrollTop : arrTop[gnbIdx]-100
 		},300)
 	});
 
@@ -129,10 +128,10 @@ $(function(){
 
 		for(let i=0; i<arrTop.length; i++){
 
-			if(scrollTop >= arrTop[i]-150){
+			if(scrollTop >= arrTop[i]-180){
 				$nav.eq(i).parent().addClass('on').siblings().removeClass('on');
 
-			} else if (scrollTop < arrTop[1]-150){
+			} else if (scrollTop < arrTop[0]-180){
 				
 				$nav.parent().removeClass('on');
 			}

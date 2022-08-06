@@ -38,3 +38,10 @@ body {overflow-y:scroll;color:#696f74;font-size:0.8em;font-family:'Nanum Gothic'
   margin: 0;
   clip: rect(1px 1px 1px 1px);
 }
+
+.container-default {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+}

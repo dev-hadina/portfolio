@@ -3,6 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>임하은의 포트폴리오</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
@@ -16,45 +19,52 @@
 <body>
 	<div id="wrap">
 
-		<section id="main">
+		<article id="main">
 			<h1>신입 웹 퍼블리셔 </h1>
 			<h2>임하은에게로 떠나는 여행!</h2>
 			<h3>Itinerary</h3>
 
-			<div class="ico">
-				<p><a href="javascript:void(0)" class="sr-only">brain</a></p>
-				<p>heart</p>
-				<p>hand</p>
-				<p>footstep</p>
+			<div class="wrapper-ico">
+				<ul class="ico">
+					<li><span class="sr-only">brain</span></li>
+					<li><span class="sr-only">heart</span></li>
+					<li><span class="sr-only">hand</span></li>
+					<li><span class="sr-only">footstep</span></li>
+				</ul>
+				<div class="line"><span class="sr-only">점선</span></div>
 			</div>
-			<p class="line">점선</p>
 
 			<p class="bg-ani">
-				<a href="#">비행기</a>
+				<a href="javascript:void(0)" class="sr-only">비행기</a>
 			</p>
-		</section>
+		</article>
 
 		<header>
-			<h2 class="logo"><a href="#"> 임하은 포트폴리오</a></h2>
-			<button type="button" class="btn-gnb">메뉴</button>
+			<div class="wrapper-header">
+				<h2 class="logo"><a href="#"> 임하은 포트폴리오</a></h2>
+				<button type="button" class="btn-gnb">메뉴</button>
 
-			<nav>
-				<ul class="gnb">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">INTRO</a></li>
-					<li><a href="#">냉철한 이성</a></li>
-					<li><a href="#">따뜻한 마음</a></li>
-					<li><a href="#">재주많은 손</a></li>
-					<li><a href="#">나아갈 발걸음</a></li>
-				</ul>
-			</nav>
+				<nav>
+					<ul class="gnb">
+						<li><a href="#">INTRO</a></li>
+						<li><a href="#">냉철한 이성</a></li>
+						<li><a href="#">따뜻한 마음</a></li>
+						<li><a href="#">재주많은 손</a></li>
+						<li><a href="#">나아갈 발걸음</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 
 		<section class="intro">
 			<h2 class="sr-only">들어가는 말</h2>
 			<div class="contents">
-				<span class="imgbg">내 사진</span>
-				<span class="img">내 사진</span>
+
+				<div class="wrapper-img">
+					<span class="imgbg"><a href="#" class="sr-only">내 사진</a></span>
+					<span class="img"><a href="#" class="sr-only">내 사진</a></span>
+				</div>
+
 				<div class="txt">
 					<p>
 						<span>‘하은아, 인생은 속도가 아니라 방향이야.’ </span> <br />
@@ -65,7 +75,7 @@
 						성공가도로 나아가야 한다는 생각에서 벗어나 하고 싶은 일을 하기로 마음 먹은 뒤 <br />
 						첫 결정은 바로 웹 개발 공부를 시작한 일입니다. <br />
 						<br />
-						그중 UI/UX디자인은 제가 그동안 공부했던 외국어와 달리, <br />
+						프론트엔드 개발은 제가 그동안 공부했던 외국어와 달리, <br />
 						내가 만드는대로 보여지고 노력한만큼 쌓여가는 기쁨을 오롯이 느끼게 해주었습니다. <br />
 						<br />
 						비전공자로서 이 분야에 첫 발을 내딛으며 많은 시행착오를 거쳤지만, <br />
@@ -77,39 +87,41 @@
 
 		<section id="brain">
 			<h3>What I Can Do!</h3>
-			<span class="icon">두뇌가동 아이콘</span>
+			<span class="icon"><a href="#" class="sr-only"> 두뇌가동 아이콘</a></span>
 
-			<article class="info">
-				<h3 class="sr-only">개인정보</h3>
-				<ul>
-					<li>- INFORMATION -</li>
-					<li>· NAME: 임하은</li>
-					<li>· BIRTH: 1997. 09. 19.</li>
-					<li>· EMAIL: fkagkrsus@naver.com</li>
-					<li>· B.A. : 한국외국어대학교 중앙아시아학과 </li>
-					<li>경영학(부전공)</li>
-				</ul>
-			</article>
+			<div class="wrapper-article">
+				<article class="info">
+					<h3 class="sr-only">개인정보</h3>
+					<ul>
+						<li>- INFORMATION -</li>
+						<li>· NAME: 임하은</li>
+						<li>· BIRTH: 1997. 09. 19.</li>
+						<li>· EMAIL: fkagkrsus@naver.com</li>
+						<li>· B.A. : 한국외국어대학교 중앙아시아학과 </li>
+						<li>경영학(부전공)</li>
+					</ul>
+				</article>
 
-			<article class="certf">
-				<h3 class="sr-only">자격사항</h3>
-				<ul>
-					<li>- CERTIFICATE -</li>
-					<li>· KPC Graphic Master자격 취득 (2022.06)</li>
-					<li>· GTQid 인디자인 1급 (2022.05)</li>
-					<li>· GTQi 일러스트 1급 (2021.10)</li>
-					<li>· GTQ 포토샵 1급 (2021.09)</li>
-				</ul>
-			</article>
+				<article class="certf">
+					<h3 class="sr-only">자격사항</h3>
+					<ul>
+						<li>- CERTIFICATE -</li>
+						<li>· KPC Graphic Master자격 취득 (2022.06)</li>
+						<li>· GTQid 인디자인 1급 (2022.05)</li>
+						<li>· GTQi 일러스트 1급 (2021.10)</li>
+						<li>· GTQ 포토샵 1급 (2021.09)</li>
+					</ul>
+				</article>
 
-			<article class="exp">
-				<h3 class="sr-only">자격사항</h3>
-				<ul>
-					<li>- EXPERIENCE -</li>
-					<li>· 화곡 이젠컴퓨터아카데미 반응형 웹표준디자인 </li>
-					<li>전문가 양성 과정 (2021.12 ~ 2022. 05)</li>
-				</ul>
-			</article>
+				<article class="exp">
+					<h3 class="sr-only">자격사항</h3>
+					<ul>
+						<li>- EXPERIENCE -</li>
+						<li>· 화곡 이젠컴퓨터아카데미 반응형 웹표준디자인 </li>
+						<li>전문가 양성 과정 (2021.12 ~ 2022. 05)</li>
+					</ul>
+				</article>
+			</div>
 
 			<div class="skills">
 				<h3 class="sr-only">스킬</h3>
@@ -120,16 +132,15 @@
 					<li><mark>저는 JS 플러그인이나 Slick 등을 전혀 사용하지 않고 Javascript와 jQuery만을 사용해 작업하며,</mark></li>
 					<li>UI/UX 디자인은 물론 프론트엔드 개발 역량도 함양하기 위해 React 학습을 병행 중입니다.</li>
 					<li>또한, W3C 웹표준을 준수하며 사용자의 모바일 기기에 맞게 구현되는 '반응형 웹페이지' 제작이 가능하며.<br /></li>
-					<li>이 포트폴리오도 반응형 페이지로 디자인되었습니다.<br /></li>
+					<li>이 포트폴리오도 모바일 반응형 페이지로 디자인되었습니다.<br /></li>
 					<li>저는 사용자 관점을 100% 고려하여 페이지를 기획하는 다재다능 웹 퍼블리셔 임하은입니다.</li>
 				</ul>
 			</div>
-
 		</section>
 
 		<section id="heart">
 			<h3>This is Who I am</h3>
-			<span class="icon">하트 아이콘</span>
+			<span class="icon"><a href="#" class="sr-only">하트 아이콘</a></span>
 
 			<article class="phts">
 				<h3 class="sr-only">임하은을 나타내는 해시태그</h3>
@@ -156,7 +167,7 @@
 
 		<section id="hand">
 			<h3>How Did I make these?</h3>
-			<span class="icon">손바닥 아이콘</span>
+			<span class="icon"><a href="#" class="sr-only">손바닥 아이콘</a></span>
 
 			<article class="portfolio">
 				<ul class="label">
@@ -185,11 +196,11 @@
 									<img src="./images/MMCA작업과정.png" alt="#">
 								</span>
 							</div>
-
-							<div class="frame">
-								<img src="./images/MMCA.gif" alt="국립현대미술관">
-							</div>
 						</figcaption>
+
+						<div class="frame">
+							<img src="./images/MMCA.gif" alt="국립현대미술관">
+						</div>
 					</figure>
 					<figure>
 						<figcaption>
@@ -212,20 +223,19 @@
 									<img src="./images/바잇미작업과정.png" alt="#">
 								</span>
 							</p>
-
-							<div class="frame">
-								<img src="./images/BITEME.gif" alt="바잇미">
-							</div>
 						</figcaption>
+
+						<div class="frame">
+							<img src="./images/BITEME.gif" alt="바잇미">
+						</div>
 					</figure>
 				</div>
-
 			</article>
 		</section>
 
 		<section id="foot">
 			<h3>Where am I heading to?</h3>
-			<span class="icon">발자국 아이콘</span>
+			<span class="icon"><a href="#" class="sr-only">발자국 아이콘</a></span>
 
 			<article class="qna">
 				<h6>Self-Interview</h6>
@@ -259,7 +269,7 @@
 
 					<dt><a href="#">5. Position relative와 absolute의 차이를 알고 있나요?<span class="arrow">버튼</span></a></dt>
 					<dd>
-						Position은 태그를 페이지 상 원하는 위치에 배치하는 속성입니다. 그중 relative는 해당 태그의 기존 위치를 기준으로 이동할 때 사용하기 때문에 <br />
+						Position은 태그를 페이지 상 원하는 위치에 배치하는 속성입니다. 그중 relative는 해당 태그의 기존 위치를 기준으로 이동할 때 사용하기 때문에
 						부모 태그에 주로 설정합니다. absolute는 해당 태그의 부모 위치를 기준으로 이동할 때 사용하므로
 						직계 자식 태그에 주로 사용합니다. <br /> absolute를 사용하려면 반드시 부모 태그에 position을 설정해야 하며,
 						그러지 않으면 최상위 태그의 위치가 기준이 됩니다.
