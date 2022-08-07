@@ -9,11 +9,11 @@ $(function(){
 		if($(window).width()>480){
 
 			$('.bg-ani').css({'animation': 'none'}).delay(0).animate({left:'100%'},1500);
-			$('html, body').delay(1500).animate({scrollTop:800});
+			$('html, body').delay(1500).animate({scrollTop:750});
 
 		} else {
 
-			$('html, body').delay(0).animate({scrollTop: 650});
+			$('html, body').delay(0).animate({scrollTop: 680});
 
 		}
 	});
