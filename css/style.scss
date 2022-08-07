@@ -767,7 +767,7 @@ $mobile : "screen and (max-width:480px)";
               margin: 0 17px;
             }
 
-            &:nth-child(1) {display: flex;}
+            // &:nth-child(1) {display: flex;}
 
             >figcaption {
 
@@ -974,7 +974,7 @@ $mobile : "screen and (max-width:480px)";
           margin-top: 50px;
 
           @media screen and (min-width:320px) and (max-width: 470px){
-            width: 100%;
+            max-width: 400px;
           }
           
           >dt {
